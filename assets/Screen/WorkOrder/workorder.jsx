@@ -10,8 +10,7 @@ const WorkOrder = ({navigation}) => {
         Welcome to the WorkOrder;
       </Text>
       <Button
-        title="Go to Home;
-"
+        title="Go to Home"
         onPress={() => navigation.navigate ('Home')}
       />
     </View>
