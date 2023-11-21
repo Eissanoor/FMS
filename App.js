@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from './assets/Screen/Login/Login';
 import Home from './assets/Screen/Home/Home';
-
+import WorkOrder from './assets/Screen/WorkOrder/workorder';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -15,6 +15,7 @@ export default function App() {
         <Stack.Navigator initialRouteName="Login">
           <Stack.Screen name="Login" component={Login}   options={{ headerShown: false }}/>
           <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="WorkOrder" component={WorkOrder} />
         </Stack.Navigator>
       </View>
       <StatusBar style="auto" />
